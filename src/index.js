@@ -5,7 +5,7 @@ const axios = require('axios')
 
 const app = express()
 app.use(cors())
-const port = 8080
+const port = process.env.PORT || 5050;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
